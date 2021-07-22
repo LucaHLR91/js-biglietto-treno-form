@@ -6,3 +6,4 @@
 // Categoria selezionata dall'utente
 // Aggiungiamo una piccola animazione al click su "Crea" e "Annulla", se clicchiamo su annulla dobbiamo ripulire il form.
 
+// Richieste all'utente

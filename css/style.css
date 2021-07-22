@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* COMMON */
 .wrapper {
     background-color: ;
 }
@@ -10,4 +12,37 @@
 .container {
     width: 70%;
     margin: 0 auto;
+}
+
+
+/* HEADER */
+
+
+
+
+/* MAIN */
+
+
+
+
+/* DEBUG */
+
+.debug .wrapper {
+    background-color: #B91450;
+}
+
+.debug header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.debug .title {
+    color: white;
+}
+
+.debug main {
+    height: 800px;
+    background-color: aqua;
 }

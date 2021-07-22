@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Biglietto del treno</title>
 </head>
-<body>
+<body class="debug">
     <div class="wrapper">
         <div class="container">
             <!-- header -->
             <header>
-
+                <div class="title">
+                    <h1>Calcola il prezzo del tuo biglietto</h1>
+                </div>
             </header>
             <!-- /header -->
 
@@ -20,7 +22,28 @@
             <main>
                 <!-- sezione immissione dati utente -->
                 <div class="main-top">
+                    <section class="request">
+                        <div>
+                            <input type="text" value="nome" placeholder="Inserisci nome e cognome">
+                            <label for="nome">Nome e Cognome</label>
+                        </div>
+                        <div>
+                            <input type="number" value="km" placeholder="Inserisci i km da percorrere">
+                            <label for="km">Nome e Cognome</label>
+                        </div>
+                        <div>
+                            <select name="eta" id="seleziona-eta">
+                                <option value="minorenne">Minorenne</option>
+                                <option value="maggiorenne">Maggiorenne</option>
+                                <option value="over65">Over65</option>
+                            </select>
+                            <label for="eta">Fascia di età</label>
+                        </div>
+                    </section>
 
+                    <section class="submit">
+                        
+                    </section>
                 </div>
                 <!-- /sezione immissione dati utente -->
 
