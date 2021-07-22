@@ -16,8 +16,16 @@
 
 
 /* HEADER */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
 
-
+.title {
+    color: white;
+}
 
 
 /* MAIN */
@@ -31,18 +39,29 @@
     background-color: #B91450;
 }
 
-.debug header {
+/* .debug header {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
-}
+} */
 
-.debug .title {
+/* .debug .title {
     color: white;
-}
+} */
 
 .debug main {
     height: 800px;
     background-color: aqua;
+}
+
+.debug .main-top {
+    height: 50%;
+    background-color: azure;
+}
+
+.debug .main-bottom {
+    height: 50%;
+    background-color: burlywood;
+    display: none;
 }

@@ -13,12 +13,25 @@ console.log(btnGenera);
 
 btnGenera.addEventListener('click',
     function() {
-        var nome = document.getElementById('nome').value;
+        var name = document.getElementById('nome').value;
         var km = document.getElementById('km').value;
         var select_eta = document.getElementById('seleziona-eta').value;
-        alert(nome + ' ' + km + ' ' + select_eta);
+        var display_ticket = document.getElementById('main-bottom');
+        display_ticket.style.display = 'block';
     }
 )
 
 // CANCELLA DATI
+var btnAnnulla = document.getElementById('annulla');
 
+btnAnnulla.addEventListener('click',
+    function() {
+        var display_ticket = document.getElementById('main-bottom');
+        display_ticket.style.display = 'none';
+
+        //svuoto imput
+        document.getElementById('nome').value = '';
+        document.getElementById('km').value = '';
+        document.getElementById('seleziona-eta').value = '';
+    }
+)
