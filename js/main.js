@@ -6,4 +6,19 @@
 // Categoria selezionata dall'utente
 // Aggiungiamo una piccola animazione al click su "Crea" e "Annulla", se clicchiamo su annulla dobbiamo ripulire il form.
 
-// Richieste all'utente
+
+// ACQUISIZIONE DATI
+var btnGenera = document.getElementById('genera'); 
+console.log(btnGenera);
+
+btnGenera.addEventListener('click',
+    function() {
+        var nome = document.getElementById('nome').value;
+        var km = document.getElementById('km').value;
+        var select_eta = document.getElementById('seleziona-eta').value;
+        alert(nome + ' ' + km + ' ' + select_eta);
+    }
+)
+
+// CANCELLA DATI
+

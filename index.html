@@ -24,12 +24,12 @@
                 <div class="main-top">
                     <section class="request">
                         <div>
-                            <input type="text" value="nome" placeholder="Inserisci nome e cognome">
+                            <input id="nome" type="text" name="nome" placeholder="Inserisci nome e cognome">
                             <label for="nome">Nome e Cognome</label>
                         </div>
                         <div>
-                            <input type="number" value="km" placeholder="Inserisci i km da percorrere">
-                            <label for="km">Nome e Cognome</label>
+                            <input id="km" type="number" name="km" placeholder="Inserisci i km da percorrere">
+                            <label for="km">Km da percorrere</label>
                         </div>
                         <div>
                             <select name="eta" id="seleziona-eta">
@@ -42,7 +42,8 @@
                     </section>
 
                     <section class="submit">
-                        
+                        <button id="genera" name="genera">Genera</button>
+                        <button id="annulla" name="delete">Annulla</button>
                     </section>
                 </div>
                 <!-- /sezione immissione dati utente -->
