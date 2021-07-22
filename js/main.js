@@ -9,17 +9,44 @@
 
 // ACQUISIZIONE DATI
 var btnGenera = document.getElementById('genera'); 
-console.log(btnGenera);
+
+var km_price = 0.21; 
 
 btnGenera.addEventListener('click',
     function() {
-        var name = document.getElementById('nome').value;
+        var nome = document.getElementById('nome').value;
         var km = document.getElementById('km').value;
         var select_eta = document.getElementById('seleziona-eta').value;
         var display_ticket = document.getElementById('main-bottom');
         display_ticket.style.display = 'block';
+
+        //CALCOLO PREZZI E STAMPO A VIDEO
+        var price_trip = km * km_price;
+        if (select_eta == 'minorenne'){
+            var price_min = (price_trip - ((price_trip * 20) / 100)).toFixed(2);
+            document.getElementById('price').innerHTML = price_min + '€'; 
+            document.getElementById('offerta').innerHTML = 'Sconto Minorenni'
+        }else if (select_eta == 'over65'){
+            var price_over = (price_trip - ((price_trip * 40) / 100)).toFixed(2);
+            document.getElementById('price').innerHTML = price_over + '€'; 
+            document.getElementById('offerta').innerHTML = 'Sconto Over65'
+        }else{
+            price_trip.toFixed(2);
+            document.getElementById('price').innerHTML = price_trip + '€'; 
+            document.getElementById('offerta').innerHTML = 'Biglietto Standard'
+        }
+
+        //NUMERO RANDOM CARROZZA E TRENO E NOME PASSEGGERO
+        document.getElementById('nome_passeggero').innerHTML = nome;
+        var numero_carrozza = Math.floor(Math.random() * 9) + 1;
+        document.getElementById('carrozza').innerHTML = numero_carrozza;
+        var numero_treno = Math.floor(Math.random() * (10000- 9000)) + 9000;
+        document.getElementById('treno').innerHTML = numero_treno;
+         
     }
+    
 )
+
 
 // CANCELLA DATI
 var btnAnnulla = document.getElementById('annulla');
