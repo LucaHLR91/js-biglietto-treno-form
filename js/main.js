@@ -49,6 +49,8 @@ btnGenera.addEventListener('click',
     
 )
 
+var passeggero = document.getElementById('passeggero');
+passeggero.style.backgroundColor = 'darkgrey';
 
 // CANCELLA DATI
 var btnAnnulla = document.getElementById('annulla');

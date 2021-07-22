@@ -83,10 +83,29 @@ header {
     padding: 10px;
 }
 
+.submit button:hover {
+    border: 2px solid #8A2BE2;
+}
+
+.main-bottom {
+    display: none;
+}
+
 .box {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+}
+
+.box-content {
+    background-color: white;
+    padding: 20px;
+}
+
+.box-content h3 {
+    font-size: 30px;
+    padding-bottom: 5px;
 }
 
 .ticket {
@@ -94,6 +113,25 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.ticket h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+    margin-left: 5px;
+}
+
+.ticket #passeggero {
+    padding: 20px;
+}
+
+.ticket #nome_passeggero {
+    font-size: 25px;
+    padding-bottom: 5px;
+    margin-left: 5px;
 }
 
 .info {
@@ -102,6 +140,15 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+.info h4 {
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.info p {
+    font-size: 18px;
 }
 
 
@@ -131,8 +178,8 @@ header {
     border-radius: 20px;
 } */
 
-.debug .main-bottom {
+/* .debug .main-bottom {
     height: 50%;
     background-color: burlywood;
     display: none;
-}
+} */
