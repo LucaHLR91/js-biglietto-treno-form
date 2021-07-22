@@ -6,6 +6,7 @@
 
 /* COMMON */
 .wrapper {
+    height: 100vh;
     background-color: #B91450;
     font-family: 'Roboto', sans-serif;
 }
