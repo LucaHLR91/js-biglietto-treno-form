@@ -73,6 +73,10 @@ header {
     border: 1px solid black;
 }
 
+:focus::placeholder {
+    color: white;
+}
+
 .submit {
     display: flex;
     justify-content: space-around;
