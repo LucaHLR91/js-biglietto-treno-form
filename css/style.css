@@ -63,7 +63,14 @@ header {
 .request select {
     border: 1px solid #B91450;
     padding: 5px;
+    border-radius: 5px;
 
+}
+
+.request input:focus, select:focus {
+    background-color: #B91450;
+    color: white;
+    border: 1px solid black;
 }
 
 .submit {
@@ -85,6 +92,7 @@ header {
 
 .submit button:hover {
     border: 2px solid #8A2BE2;
+    cursor: pointer;
 }
 
 .main-bottom {
@@ -169,9 +177,9 @@ header {
     color: white;
 } */
 
-.debug main {
+/* .debug main {
     height: 800px;
-}
+} */
 
 /* .debug .main-top {
     background-color: white;
