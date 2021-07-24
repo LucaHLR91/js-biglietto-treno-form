@@ -7,14 +7,9 @@
 /* COMMON */
 body{
     font-family: 'Roboto', sans-serif;
-}
-
-.container-fluid {
     background-color: #B91450;
     height: 100vh;
 }
-
-
 
 
 /* HEADER */
@@ -34,4 +29,35 @@ header h1 {
 }
 
 /* MAIN */
+
+main label {
+    font-size: 20px;
+    color:#B91450;
+    padding: 30px 0;
+    font-weight: bold;
+}
+
+main input,
+select {
+    border: 1px solid #B91450;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+main input:focus, select:focus {
+    background-color: #B91450;
+    color: white;
+}
+
+:focus::placeholder{
+    color: white;
+}
+
+main button {
+    padding: 10px;
+    background-color: white;
+    color: #B91450;
+    font-size: 20px;
+    border: 1px solid #B91450;
+}
 

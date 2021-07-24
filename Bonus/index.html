@@ -19,7 +19,7 @@
             <!-- INIZIO HEADER -->
             <header>
                 <div class="row">
-                    <div class="col-l-12 d-flex justify-content-around align-items-center">
+                    <div class="col-lg-12 d-flex justify-content-around align-items-center">
                         <div id="logo">
                             <img src="img/Italo-treno-lavora-con-noi.jpg" alt="logo Italo">
                         </div>
@@ -32,21 +32,32 @@
             <!-- INIZIO MAIN -->
             <main>
                 <!-- INSERIMENTO DATI UTENTE -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-l-4">
-                            <label for=""></label>
-                            <input type="text" >
+                <div class="container-fluid bg-light rounded">
+                    <div class="row justify-content-around align-items-center">
+                        <div class="col-lg-4 d-flex flex-column">
+                            <label class="text-center" for="nome">Nome e Cognome</label>
+                            <input id="nome" type="text" name="nome" placeholder="Inserisci il tuo nome e cognome" >
                         </div>
-                        <div class="col-l-4">
-
+                        <div class="col-lg-4 d-flex flex-column">
+                            <label class="text-center" for="km">Km da percorrere</label>
+                            <input id="km" type="number" name="km" placeholder="Inserisci i km" >
                         </div>
-                        <div class="col-l-4">
-
+                        <div class="col-lg-4 d-flex flex-column">
+                            <label class="text-center" for="eta">Fascia d'età</label>
+                            <select name="eta" id="eta">
+                                <option value="minorenne">Minorenne</option>
+                                <option value="maggiorenne">Maggiorenne</option>
+                                <option value="over65">Over65</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="row">
-
+                    <div class="row px-5 py-5">
+                        <div class="col-lg-6 d-flex justify-content-center">
+                            <button class="rounded">Genera</button>
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-center">
+                            <button class="rounded">Annulla</button>
+                        </div>
                     </div>
                 </div>
                 <!-- /INSERIMENTO DATI UTENTE -->
