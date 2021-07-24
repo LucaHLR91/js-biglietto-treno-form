@@ -19,5 +19,7 @@ btnGenera.addEventListener('click',
         var nome = document.getElementById('nome').value;
         var km = document.getElementById('km').value;
         var select_eta = document.getElementById('eta').value;
+        var display_ticket = document.getElementById('ticket');
+        display_ticket.style.display = 'block';
     }
 )

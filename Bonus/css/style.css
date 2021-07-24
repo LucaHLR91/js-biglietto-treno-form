@@ -66,6 +66,10 @@ button:hover {
     cursor: pointer;
 }
 
+main .hide {
+    display: none;
+}
+
 main h2 {
     color: white;
     font-size: 34px;
