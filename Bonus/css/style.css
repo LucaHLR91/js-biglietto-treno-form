@@ -5,7 +5,9 @@
 }
 
 /* COMMON */
-body{
+
+.wrapper {
+    position: relative;
     font-family: 'Roboto', sans-serif;
     background-color: #B91450;
     height: 100vh;
@@ -75,3 +77,12 @@ main h2 {
     font-size: 34px;
 }
 
+/* FOOTER */
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
