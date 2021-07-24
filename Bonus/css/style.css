@@ -4,3 +4,28 @@
     box-sizing: border-box;
 }
 
+/* COMMON */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid {
+    background-color: #B91450;
+    height: 100vh;
+}
+
+
+
+
+/* HEADER */
+
+
+
+
+
+/* MAIN */
+
+
+
+
+/* DEBUG */
