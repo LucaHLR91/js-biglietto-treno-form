@@ -17,6 +17,7 @@ body{
 header h1 {
     width: 50%;
     color: white;
+    font-size: 34px;
 }
 
 #logo {
@@ -59,5 +60,14 @@ main button {
     color: #B91450;
     font-size: 20px;
     border: 1px solid #B91450;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+main h2 {
+    color: white;
+    font-size: 34px;
 }
 
