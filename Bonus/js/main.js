@@ -21,6 +21,7 @@ btnGenera.addEventListener('click',
         var select_eta = document.getElementById('eta').value;
         var display_ticket = document.getElementById('ticket');
         display_ticket.style.display = 'block';
+        display_ticket.className = this.classList + ' show';
 
         //CALCOLO PREZZI E STAMPO A VIDEO
         var price_trip = km * km_price;
